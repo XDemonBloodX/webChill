@@ -1,0 +1,107 @@
+#msgDons {
+    text-align: center;
+}
+
+@keyframes phone {
+    0% {
+        transform: rotateZ(15deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateZ(23deg) rotateY(0deg);
+    }
+}
+
+.animated-phone {
+    z-index: 0;
+    max-width: 300px;
+    height: 100%;
+    margin: auto;
+    background-color: transparent;
+    animation: phone 3s ease-in 0s infinite alternate;
+}
+
+.layer {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .animated-phone {
+        max-width: 230px;
+    }
+    .animated-phone .layer {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/*bug chelou, mettre à 800px pour 600px*/
+
+@media screen and (min-width: 800px) {
+    .container {
+        display: flex;
+        margin-top: 50px;
+        width: 100%;
+        padding: 25px;
+    }
+    .contentDons {
+        width: 50%;
+    }
+    #boxDons1 {
+        flex: 1;
+    }
+    #boxDons2 {
+        flex: 1;
+    }
+    .vertical-line {
+        border-left: 2px solid #000;
+        display: inline-block;
+        height: 200px;
+        margin: 0 20px;
+    }
+}
+
+.container {
+    margin-top: 30px;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+#msgDons {
+    background-color: var(--butonAdd);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--light);
+}
+
+#paypalDons {
+    margin-top: 20px;
+}
+
+#paypalImg {
+    height: 15%;
+    background-color: var(--light);
+    width: 50%;
+    padding: 10px 10% 10px 10%;
+    border-radius: 5px;
+}
+
+.jumbotron {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
