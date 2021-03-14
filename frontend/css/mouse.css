@@ -43,7 +43,8 @@ mouse_p {
 }
 
 .mouse:after {
-    background-color: #ffffff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 100% 100%;
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -322,95 +323,5 @@ mouse_p {
     }
     90% {
         transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes nudgeText {
-    0% {
-        transform: translateY(0);
-    }
-    20% {
-        transform: translateY(2px);
-    }
-    30% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(2px);
-    }
-    60% {
-        transform: translateY(0);
-    }
-    80% {
-        transform: translateY(2px);
-    }
-    90% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes nudgeText {
-    0% {
-        transform: translateY(0);
-    }
-    20% {
-        transform: translateY(2px);
-    }
-    30% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(2px);
-    }
-    60% {
-        transform: translateY(0);
-    }
-    80% {
-        transform: translateY(2px);
-    }
-    90% {
-        transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes colorText {
-    21% {
-        color: #4e5559;
-    }
-    30% {
-        color: #ffffff;
-    }
-    51% {
-        color: #4e5559;
-    }
-    60% {
-        color: #ffffff;
-    }
-    81% {
-        color: #4e5559;
-    }
-    90% {
-        color: #ffffff;
-    }
-}
-
-@keyframes colorText {
-    21% {
-        color: #4e5559;
-    }
-    30% {
-        color: #ffffff;
-    }
-    51% {
-        color: #4e5559;
-    }
-    60% {
-        color: #ffffff;
-    }
-    81% {
-        color: #4e5559;
-    }
-    90% {
-        color: #ffffff;
     }
 }

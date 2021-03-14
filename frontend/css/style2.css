@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-:root {
+ :root {
     --dark-color: #36393f;
     --header: #271f30;
     --footer: #282d32;
@@ -212,7 +212,7 @@ header.nav-fixed .navbar-brand img {
 *===================================*/
 
 #home {
-    padding-top: 14em;
+    padding-top: 10em;
     height: 100%;
     position: relative;
     background-color: var(--footer);
@@ -481,6 +481,7 @@ header.nav-fixed .navbar-brand img {
 
 #site-header {
     background: #202225;
+    z-index: 10;
 }
 
 
@@ -611,7 +612,6 @@ header.nav-fixed .navbar-brand img {
 .footer-basic ul a {
     color: inherit;
     text-decoration: none;
-    opacity: 0.8;
 }
 
 .footer-basic ul a:hover {
@@ -636,7 +636,6 @@ header.nav-fixed .navbar-brand img {
     border: 1px solid #ccc;
     margin: 0 8px;
     color: inherit;
-    opacity: 0.75;
 }
 
 .footer-basic .social>a:hover {
@@ -689,10 +688,6 @@ header.active {
     top: 0;
 }
 
-.margMouse {
-    margin-top: 2%;
-}
-
 #c {
     position: absolute;
     height: auto;
@@ -737,4 +732,151 @@ header.active {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.acceptCookie {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--butonAdd);
+    color: white;
+    text-align: left;
+    padding: 3vh;
+    font-size: 60%;
+    line-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textPrivacy {
+    flex: 10;
+}
+
+.textPrivacy>a:hover {
+    text-decoration: underline;
+}
+
+.myPrivacy {
+    flex: 1;
+}
+
+.Privacy {
+    line-height: 1.2em;
+}
+
+#spaceBtnPrivacy {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .acceptCookie {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--butonAdd);
+        color: white;
+        text-align: left;
+        padding: 3vh;
+        font-size: 75%;
+        line-height: 100%;
+        height: 70%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        z-index: 10000;
+    }
+    #spaceBtnPrivacy {
+        margin-top: 0px;
+    }
+    .textPrivacy>a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .acceptCookie {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--butonAdd);
+        color: white;
+        text-align: left;
+        padding: 3vh;
+        line-height: 100%;
+        height: 40%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        z-index: 10000;
+    }
+    #spaceBtnPrivacy {
+        margin-top: 10px;
+    }
+    .textPrivacy>a {
+        font-size: 1em;
+    }
+}
+
+.cookJs {
+    display: none;
+}
+
+body {
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 4s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#messageIndex {
+    text-align: left;
 }

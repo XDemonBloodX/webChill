@@ -13,7 +13,6 @@
 
 .animated-phone {
     z-index: 0;
-    max-width: 300px;
     height: 100%;
     margin: auto;
     background-color: transparent;
@@ -40,19 +39,11 @@
 
 @media screen and (min-width: 800px) {
     .container {
-        display: flex;
-        margin-top: 50px;
         width: 100%;
         padding: 25px;
     }
     .contentDons {
-        width: 50%;
-    }
-    #boxDons1 {
-        flex: 1;
-    }
-    #boxDons2 {
-        flex: 1;
+        margin-top: 24px;
     }
     .vertical-line {
         border-left: 2px solid #000;
@@ -62,29 +53,28 @@
     }
 }
 
+.jumbotron {
+    padding-top: 8em;
+    padding-bottom: 10em;
+}
+
 .container {
-    margin-top: 30px;
-    width: 100%;
+    margin-top: 40px;
+    width: 80%;
     padding: 25px;
     text-align: center;
 }
 
 #msgDons {
     background-color: var(--butonAdd);
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     color: var(--light);
 }
 
-#paypalDons {
-    margin-top: 20px;
-}
-
 #paypalImg {
     height: 15%;
-    background-color: var(--light);
     width: 50%;
-    padding: 10px 10% 10px 10%;
     border-radius: 5px;
 }
 
@@ -103,5 +93,24 @@
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #paypalImg {
+        height: auto;
+        width: 100%;
+    }
+    #msgDons {
+        font-size: 14px;
+    }
+    .jumbotron {
+        padding-top: 10em;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 62%;
     }
 }
