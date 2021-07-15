@@ -755,6 +755,10 @@ header.active {
     flex: 10;
 }
 
+#navLogo {
+    border-radius: 160px;
+}
+
 .textPrivacy>a:hover {
     text-decoration: underline;
 }
